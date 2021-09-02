@@ -4,7 +4,7 @@ const sass = require('gulp-sass')(require('sass')); //FUNCION (gulp-sass)
 //Funcion que compila SASS
 
 function css(done) {
-  return src('src/scss/app.scss').pipe(sass()).pipe(dest('./build/css'));
+  return src('src/scss/app.scss').pipe(sass({ outputStyle: 'expanded' }));
 }
 
 function minificarCSS(done) {

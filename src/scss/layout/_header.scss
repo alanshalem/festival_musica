@@ -1,14 +1,40 @@
+@use 'sass:math';
 .header {
   background-color: $verde;
+
   .contenido-header {
-    padding: 1rem;
+    // padding: $separacion/2 0;
+    padding: math.div($separacion, 2);
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   h1 {
-    margin: 1rem;
+    color: $blanco;
+    margin-bottom: 1rem;
+    text-align: center;
+    @include tablet {
+      margin-bottom: 0;
+    }
+    // @include nuevoMixin(uppercase, 3rem);
   }
 }
 
 .navegacion-principal {
-  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  a {
+    color: $blanco;
+    font-size: 2rem;
+    // @include nuevoMixin(lowercase, 2rem);
+    &:hover {
+      //& hace referencia al elemento padre (el elemento que rodea al selector), en este caso 'a'
+      color: $amarillo;
+    }
+  }
 }
