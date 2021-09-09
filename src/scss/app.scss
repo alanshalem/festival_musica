@@ -4,17 +4,4 @@
 @import 'base/mixins';
 @import 'base/globales';
 @import 'layout/header';
-
-body {
-  font-family: $fuentePrincipal;
-}
-
-h1 {
-  font-family: $fuentePrincipal;
-  margin-top: 20px;
-}
-
-p {
-  font-family: $fuentePrincipal;
-  margin-top: 40px;
-}
+@import 'layout/video';

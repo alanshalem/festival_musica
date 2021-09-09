@@ -425,16 +425,11 @@ h3 {
   color: #fef460;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
+.video {
+  position: relative;
 }
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 20px;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 40px;
+.video .overlay {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
 }
